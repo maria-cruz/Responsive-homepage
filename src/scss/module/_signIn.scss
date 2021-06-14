@@ -1,0 +1,251 @@
+.sign-in-layout {
+  align-items: center;
+  max-width: 450px;
+  height: 570px;
+  width: 95vw;
+  display: flex;
+  position: relative;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-top: 30px;
+  font-size: 16px;
+  @include for-size(tablet-portrait-up) {
+    font-size: 1.6rem;
+    margin-top: 60px;
+    max-width: 850px;
+    height: 500px;
+    width: 63vw;
+  }
+
+  .social-media-container .social-media-buttons {
+    display: none;
+    @include for-size(tablet-portrait-up) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include for-size(tablet-landscape-up) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      max-width: 25rem;
+      width: 18.5vw;
+      margin: 15px;
+    }
+    @include for-size(desktop-up) {
+      width: 18vw;
+    }
+  }
+
+  .icon-phone {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-phone .social-media-buttons {
+    display: flex;
+    max-width: 23rem;
+    width: 70vw;
+    @include for-size(tablet-portrait-up) {
+      display: none;
+    }
+  }
+  .social-media-buttons .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dadada;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 7px;
+  }
+
+  .small {
+    font-size: 13px;
+    color: grey;
+    font-weight: 200;
+    margin: 5px;
+  }
+  .ant-form-item-control {
+    height: 6.5rem;
+  }
+  .ant-input-password-icon svg {
+    position: absolute;
+    right: 13rem;
+    bottom: 22rem;
+    fill: $gray;
+    @include for-size(desktop-up) {
+      bottom: 21rem;
+    }
+  }
+  .social-media-buttons .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.sign-in-left-container,
+.sign-in-right-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include for-size(desktop-up) {
+    padding: 2rem;
+  }
+}
+.sign-in-left-container {
+  border-radius: 0.5rem 0 0 0.5rem;
+  background: $bluegreen;
+  height: 100%;
+  color: white;
+  display: flex;
+  width: 1rem;
+  @include for-size(tablet-portrait-up) {
+    padding: 2rem;
+    width: 15%;
+  }
+  @include for-size(tablet-landscape-up) {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .greetings-container {
+    display: none;
+    @include for-size(tablet-landscape-up) {
+      display: block;
+    }
+  }
+
+  .greetings-container .sign-in-header {
+    font-size: 3.5rem;
+  }
+}
+
+.sign-in-right-container {
+  display: grid;
+  width: 95%;
+  height: 73%;
+  @include for-size(tablet-portrait-up) {
+    width: 85%;
+    height: 68%;
+  }
+  @include for-size(tablet-landscape-up) {
+    height: 74%;
+  }
+  @include for-size(desktop-up) {
+    height: 85%;
+  }
+  .sign-in-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sign-in-right-header {
+    color: #2a9d8f;
+    margin-bottom: 30px;
+    font-size: 35px;
+    @include for-size(tablet-portrait-up) {
+      font-size: 3.5rem;
+      margin-bottom: 40px;
+    }
+  }
+
+  .input-container .ant-input {
+    font-size: 16px;
+    max-width: 47rem;
+    width: 85vw;
+    height: 50px;
+    padding: 1rem;
+    border: 1px solid #a3a3a3;
+    border-radius: 1px;
+    @include for-size(tablet-portrait-up) {
+      font-size: 1.6rem;
+      max-width: 37rem;
+      width: 57.3vw;
+      height: 5rem;
+    }
+    @include for-size(tablet-landscape-up) {
+      max-width: 300px;
+      width: 28vw;
+    }
+  }
+  .ant-form-item-explain-error {
+    display: flex;
+    color: $red;
+    font-size: 1.6rem;
+  }
+
+  .ant-form-item-label {
+    margin-bottom: 0.5rem;
+    color: #a3a3a3;
+    font-weight: bold;
+  }
+
+  .input-container .ant-form-item {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include for-size(tablet-portrait-up) {
+      margin-bottom: 1.5rem;
+    }
+    @include for-size(tablet-landscape-up) {
+      margin-bottom: 1rem;
+    }
+    @include for-size(desktop-up) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .form-button-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  button {
+    max-width: 47rem;
+    width: 85vw;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: white;
+    background-color: #2a9d8f;
+    border: none;
+    cursor: pointer;
+    @include for-size(tablet-portrait-up) {
+      font-size: 1.6rem;
+      max-width: 37rem;
+      width: 57.3vw;
+      height: 5rem;
+    }
+    @include for-size(tablet-landscape-up) {
+      max-width: 32.5rem;
+      width: 28vw;
+    }
+    @include for-size(desktop-up) {
+      max-width: 30rem;
+    }
+  }
+
+  button:hover {
+    border: solid 1px black;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: $bluegreen;
+  }
+  a:visited {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $bluegreen;
+  }
+}
