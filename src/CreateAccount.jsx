@@ -1,7 +1,7 @@
-// import React, { useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Input, Form } from "antd";
-// import { useAuth } from "./contexts/index";
+
 const CreateAccount = () => {
   const handleSubmitForm = () => {
     alert("Done!");

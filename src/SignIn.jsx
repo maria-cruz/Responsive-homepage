@@ -49,7 +49,7 @@ const SignIn = () => {
                   },
                 ]}
               >
-                <Input />
+                <Input type="password" />
               </Form.Item>
             </div>
 
